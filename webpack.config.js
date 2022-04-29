@@ -31,8 +31,8 @@ module.exports = {
             },
           },
           {
-            loader: "image-webpack-loader"
-          }
+            loader: "image-webpack-loader",
+          },
         ],
       },
     ],
@@ -47,4 +47,10 @@ module.exports = {
       analyzerMode: "static", // the report outputs to an HTML file in the dist folder
     }),
   ],
+  // DevServer
+  devServer: {
+    static:{
+      directory:"./"
+    },
+  },
 };
